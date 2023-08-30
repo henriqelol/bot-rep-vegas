@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "bot-rep-vegas"
+version = "0.1.0"
+description = ""
+authors = ["henriqelol <henriqelol@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+sqlalchemy = "^2.0.20"
+alembic = "^1.11.3"
+psycopg2-binary = "^2.9.7"
+simple-settings = "^1.2.0"
+flake8 = "^6.1.0"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.7.0"
+mypy = "^1.5.1"
+autoflake8 = "^0.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_level = "DEBUG"
+asyncio_mode = "auto"
+addopts = "-ra"
